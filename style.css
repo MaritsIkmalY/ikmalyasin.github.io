@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:wght@700&family=Montserrat:wght@300;400;700&display=swap');
+
+/* Main */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+img {
+    object-fit: cover;
+}
+
+section {
+    padding-top: 5rem;
+}
+
+span {
+    color: rgba(31, 30, 30, 0.24);
+}
+
+/* End Main */
+
+/* Nav-Bar Section*/
+.navbar-nav a {
+    font-size: 1.8rem;
+    font-weight: 300;
+    letter-spacing: .01rem;
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+
+.navbar {
+    margin-top: -5px;
+    transition: .5s ease background-color;
+}
+
+.navbar-brand {
+    margin-left: 15px;
+}
+
+/* End Navbar Section */
+
+/* Home Section / Hero Section */
+.home img {
+    width: 25%;
+    animation: toBottom 5s;
+    animation-delay: -2s;
+}
+
+.home p {
+    font-size: 2rem;
+    font-weight: 350;
+    animation: toRight 5s;
+    animation-delay: -2s;
+    color: rgb(59, 50, 189);
+}
+
+.home h1 {
+    animation: toLeft 4s;
+    animation-delay: -2s;
+}
+
+/* End Hero Section */
+
+/* About Section */
+#about p {
+    font-size: 1.3rem;
+}
+
+/* End About Section */
+
+/* Project Section */
+#project .card:hover {
+    transform: scale(1.05);
+}
+
+#project .card {
+    transition: .5s ease transform;
+    border-radius: 5px;
+}
+
+#project .card img {
+    height: 300px;
+}
+
+#project .card p {
+    font-size: 1.3rem;
+}
+
+#project .card h5 {
+    font-size: 1.3rem;
+}
+
+/* End Project Section*/
+
+/* Contact Section */
+#contact label {
+    font-size: 1.3rem;
+}
+
+#emailHelp {
+    font-size: 1.3rem;
+}
+
+#contact .tombol {
+    font-size: 1.3rem;
+}
+
+/* End Project Section */
+
+/* Footer */
+#footer img {
+    width: 27px;
+}
+
+#footer img {
+    filter: grayscale(1);
+    transition: .3s ease filter;
+}
+
+#footer img:hover {
+    filter: grayscale(0);
+}
+
+#footer p {
+    font-size: 0.8rem;
+    margin-top: 3px;
+}
+
+#footer h1 {
+    margin-top: -35px;
+}
+
+#footer h2 {
+    font-weight: 350;
+    font-size: 2rem;
+}
+
+/* End Footer */
+
+/* Keyframes Animation */
+@keyframes toRight {
+    100% {
+        transform: translateX(0);
+    }
+
+    0% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes toLeft {
+    100% {
+        transform: translateX(0);
+    }
+
+    0% {
+        transform: translateX(100%);
+    }
+
+}
+
+@keyframes toBottom {
+    100% {
+        transform: translateY(0);
+    }
+
+    0% {
+        transform: translateY(-100%);
+        ;
+    }
+}
+
+/* End Keyframes Animation */
+
+@media (max-width:990px) {
+
+    /* Navbar */
+    .navbar {
+        background-color: rgb(13, 110, 253);
+    }
+
+    /* End Navbar */
+
+    /* Footer */
+    #footer h1 {
+        margin-top: -25px;
+    }
+
+    /* End Footer */
+}
