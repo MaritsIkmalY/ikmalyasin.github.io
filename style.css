@@ -187,6 +187,11 @@ span {
     .navbar {
         background-color: rgb(13, 110, 253);
     }
+    
+    .navbar-brand {
+        margin-top: 10px;
+    }
+
 
     /* End Navbar */
 
